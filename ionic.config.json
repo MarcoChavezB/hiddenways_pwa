@@ -1,0 +1,7 @@
+{
+  "name": "hiddenways",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
