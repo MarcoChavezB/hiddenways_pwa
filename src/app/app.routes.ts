@@ -10,8 +10,4 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
-  {
-    path: 'login',
-    pathMatch: 'full'
-  }
 ];
