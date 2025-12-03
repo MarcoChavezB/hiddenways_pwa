@@ -1,0 +1,15 @@
+        .gradient-bg {
+    background: linear-gradient(135deg, #FF6B08 0%, #FFA726 50%, #FFCC80 100%);
+        }
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: #FF6B08;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }

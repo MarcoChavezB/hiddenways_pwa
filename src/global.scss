@@ -35,5 +35,12 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 //@import '@ionic/angular/css/palettes/dark.system.css';
+.text-primary{
+  color: #FF6B08 !important;
+}
 
+.btn-primary{
+  color: white !important;
+  background-color: #FF6B08 !important;
+}
 @import "tailwindcss";
