@@ -1,0 +1,102 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(3px);
+  z-index: 90;
+}
+
+.bottom-modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 30%;
+  width: 100%;
+  z-index: 99;
+  background: #111;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.25s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.modal-header {
+  margin-top: 10px;
+
+  .small-logo {
+    width: 26px;
+    margin-bottom: 12px;
+    opacity: 0.9;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0;
+    margin-top: 6px;
+    color: #bbb;
+    font-size: 0.9rem;
+  }
+}
+
+.instagram-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 0.9rem;
+  background: #222;
+  border-radius: 12px;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 500;
+
+  .ig-icon {
+    width: 26px;
+  }
+
+  .arrow {
+    font-size: 1.5rem;
+    opacity: 0.7;
+  }
+
+  &:hover {
+    background: #2a2a2a;
+  }
+}

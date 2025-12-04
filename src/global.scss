@@ -12,11 +12,6 @@
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
 
-/* Basic CSS for apps built with Ionic */
-@import "@ionic/angular/css/normalize.css";
-@import "@ionic/angular/css/structure.css";
-@import "@ionic/angular/css/typography.css";
-@import "@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "@ionic/angular/css/padding.css";
@@ -35,12 +30,43 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 //@import '@ionic/angular/css/palettes/dark.system.css';
-.text-primary{
-  color: #FF6B08 !important;
+
+
+// color de fondo
+body {
+  background-color: #101010 !important;
+  color: white;
 }
 
-.btn-primary{
-  color: white !important;
-  background-color: #FF6B08 !important;
+.custom-bg{
+  background: rgba(0, 0, 0, 0.3) !important;
 }
+
+.global-bg{
+    background-color: #101010 !important;
+}
+
+app-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+ion-app, ion-content {
+  --background: #101010 !important;
+  background: #101010 !important;
+}
+
+ion-content {
+  --background: transparent !important;
+  background: transparent !important;
+}
+
 @import "tailwindcss";
+@plugin "daisyui" {
+  themes: dark --default,;
+  root: ":root";
+  logs: true;
+}

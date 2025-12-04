@@ -1,0 +1,36 @@
+<div class="overlay" (click)="close()"></div>
+<div class="bottom-modal animate-slide-up">
+  <button class="close-btn" (click)="close()">✕</button>
+
+  <div class="post-preview">
+    <div class="header">
+      <div class="avatar">{{ user[0] }}</div>
+      <div class="info flex flex-col">
+        <strong>{{ user }}</strong>
+        <span>{{ time }}</span>
+      </div>
+    </div>
+
+    <p class="post-text">{{ text }}</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="comments-list">
+    <div class="comment-item" *ngFor="let c of comments">
+      <div class="avatar small">{{ c.user[0] }}</div>
+
+      <div>
+        <strong>{{ c.user }}</strong>
+        <p>{{ c.text }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INPUT DE COMENTARIO -->
+  <div class="comment-input">
+    <input type="text" placeholder="Añadir un comentario..." [(ngModel)]="newComment" />
+    <button (click)="sendComment()" [disabled]="!newComment.trim()">Enviar</button>
+  </div>
+
+</div>
