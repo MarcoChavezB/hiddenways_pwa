@@ -1,3 +1,35 @@
-<p>
-  profile-view works!
-</p>
+<div class="profile-container">
+
+  <!-- ENCABEZADO -->
+  <div class="profile-header">
+    <img [src]="photoUrl" alt="profile photo" class="profile-photo" />
+
+    <div class="user-info">
+      <h2>{{ name }}</h2>
+      <p class="username">@{{ preferredName }}</p>
+      <p class="email">{{ email }}</p>
+    </div>
+  </div>
+
+  <!-- GUSTOS -->
+  <div class="section-title">Bio</div>
+  <div class="mis_gustos">
+    {{ bio }}
+  </div>
+
+  <!-- DIVIDER -->
+  <div class="divider"></div>
+
+  <!-- MIS PUBLICACIONES -->
+  <div class="posts-grid">
+    <app-social-post
+      *ngFor="let post of myPosts"
+      [user]="name"
+      [time]="post.time"
+      [text]="post.text"
+      [images]="post.images"
+      [likes]="post.likes"
+      [comments]="post.comments"
+    ></app-social-post>
+  </div>
+</div>

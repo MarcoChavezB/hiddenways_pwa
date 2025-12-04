@@ -2,6 +2,11 @@
   min-height: calc(100vh - 120px);
   padding: 0 16px;
   box-sizing: border-box;
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+
 }
 
 #container {
